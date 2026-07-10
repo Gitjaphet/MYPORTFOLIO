@@ -1,0 +1,13 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "Hi, I'm Japhet",
+    "subtitle": "Full-Stack & DevOps Developer"
+  }
+}
