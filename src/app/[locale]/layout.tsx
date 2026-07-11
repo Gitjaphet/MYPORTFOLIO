@@ -4,8 +4,11 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Header } from "@/components/layout/header";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { NavigationProgressProvider } from "@/components/providers/navigation-progress";
+import { LoadingIndicator } from "@/components/layout/loading-indicator";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -60,7 +63,11 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <NavigationProgressProvider>
+              <Header />
+              <main className="pt-20">{children}</main>
+              <LoadingIndicator />
+            </NavigationProgressProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

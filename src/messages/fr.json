@@ -7,7 +7,12 @@
     "contact": "Contact"
   },
   "HomePage": {
-    "title": "Salut, je suis Japhet",
-    "subtitle": "Développeur Full-Stack & DevOps"
+    "badge": "Disponible en freelance",
+    "kicker": "// full-stack & devops",
+    "title": "Je construis des produits, du frontend à l'infra",
+    "subtitle": "Développeur Full-Stack & DevOps",
+    "description": "Next.js, Django, Docker, et tout ce qu'il faut entre les deux.",
+    "ctaPrimary": "Voir mes projets",
+    "ctaSecondary": "Me contacter"
   }
 }
