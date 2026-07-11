@@ -7,12 +7,24 @@
     "contact": "Contact"
   },
   "HomePage": {
-    "badge": "Available for freelance",
+    "badge": "Your Dev Boss",
     "kicker": "// full-stack & devops",
     "title": "I build products, from frontend to infra",
     "subtitle": "Full-Stack & DevOps Developer",
-    "description": "Next.js, Django, Docker, and everything in between.",
+    "description": "Next.js, Django, Odoo, FastAPI, Docker and everything in between.",
     "ctaPrimary": "View my projects",
-    "ctaSecondary": "Get in touch"
+    "ctaSecondary": "Get in touch" 
+  },
+  
+  "TechStack": {
+    "kicker": "// stack & tools",
+    "title": "What I use day to day",
+    "tabs": {
+      "languages": "Languages",
+      "frameworks": "Frameworks & CMS",
+      "cloud": "DevOps",
+      "ai": "AI & Tools"
+    }
   }
+
 }

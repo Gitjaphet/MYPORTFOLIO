@@ -6,23 +6,22 @@ import { usePathname, useRouter, Link } from "@/i18n/navigation";
 import { navLinks } from "@/config/nav";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { cn } from "@/lib/utils";
 import { useNavigationProgress } from "@/components/providers/navigation-progress";
-import { MobileNav } from "@/components/layout/mobile-nav";
-
 
 export function Header() {
   const t = useTranslations("Nav");
   const pathname = usePathname();
+  const router = useRouter();
+  const { startNavigation } = useNavigationProgress();
+
   const [scrolled, setScrolled] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const navRef = useRef<HTMLElement>(null);
   const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const [pillStyle, setPillStyle] = useState({ x: 0, width: 0, opacity: 0 });
-
-  const router = useRouter();
-  const { startNavigation } = useNavigationProgress();    
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -33,6 +32,8 @@ export function Header() {
 
   const activeIndex = navLinks.findIndex((link) => link.href === pathname);
   const targetIndex = hoveredIndex ?? activeIndex;
+  const isHome = pathname === "/";
+  const overDarkHero = isHome && !scrolled;
 
   useEffect(() => {
     if (targetIndex < 0) {
@@ -68,7 +69,13 @@ export function Header() {
             : "w-full max-w-none rounded-none border-transparent bg-transparent px-6 py-4"
         )}
       >
-        <Link href="/" className="mr-8 shrink-0 font-heading text-lg italic">
+        <Link
+          href="/"
+          className={cn(
+            "mr-8 shrink-0 font-heading text-lg italic transition-colors",
+            overDarkHero ? "text-white" : "text-zinc-900 dark:text-zinc-100"
+          )}
+        >
           japhet<span className="text-lime-500">.</span>
         </Link>
 
@@ -76,10 +83,18 @@ export function Header() {
           <nav
             ref={navRef}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="relative flex items-center gap-2 rounded-full bg-zinc-100/80 p-1.5 font-mono text-sm dark:bg-zinc-900/80"
+            className={cn(
+              "relative flex items-center gap-2 rounded-full p-1.5 font-mono text-sm transition-colors",
+              overDarkHero
+                ? "bg-white/10 backdrop-blur-sm"
+                : "bg-zinc-100/80 dark:bg-zinc-900/80"
+            )}
           >
             <span
-              className="pointer-events-none absolute left-0 top-1.5 h-[calc(100%-12px)] rounded-full bg-white shadow-sm dark:bg-zinc-700"
+              className={cn(
+                "pointer-events-none absolute left-0 top-1.5 h-[calc(100%-12px)] rounded-full shadow-sm",
+                overDarkHero ? "bg-white/90" : "bg-white dark:bg-zinc-700"
+              )}
               style={{
                 width: pillStyle.width,
                 transform: `translateX(${pillStyle.x}px)`,
@@ -94,19 +109,19 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 ref={(el) => {
-                    linkRefs.current[i] = el;
+                  linkRefs.current[i] = el;
                 }}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onClick={(e) => {
-                    e.preventDefault();
-                    startNavigation(() => router.push(link.href));
+                  e.preventDefault();
+                  startNavigation(() => router.push(link.href));
                 }}
                 className={cn(
-                    "relative z-10 px-5 py-2 text-zinc-500 transition-colors duration-300 dark:text-zinc-400",
-                    (hoveredIndex === i || (hoveredIndex === null && activeIndex === i)) &&
-                    "text-zinc-900 dark:text-zinc-100"
+                  "relative z-10 px-5 py-2 transition-colors duration-300",
+                  overDarkHero ? "text-zinc-300" : "text-zinc-500 dark:text-zinc-400",
+                  (hoveredIndex === i || (hoveredIndex === null && activeIndex === i)) && "text-zinc-900"
                 )}
-                >
+              >
                 {t(link.key)}
               </Link>
             ))}
@@ -115,10 +130,10 @@ export function Header() {
 
         <div className="flex shrink-0 items-center gap-3">
           <div className="hidden items-center gap-3 md:flex">
-            <LanguageSwitcher />
-            <ThemeToggle />
+            <LanguageSwitcher inverted={overDarkHero} />
+            <ThemeToggle inverted={overDarkHero} />
           </div>
-          <MobileNav />
+          <MobileNav triggerClassName={overDarkHero ? "text-white hover:bg-white/10" : undefined} />
         </div>
       </header>
     </div>

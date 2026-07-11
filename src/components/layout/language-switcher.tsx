@@ -6,12 +6,9 @@ import { useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { useNavigationProgress } from "@/components/providers/navigation-progress";
 
-
-
-
 const locales = ["fr", "en"] as const;
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ inverted = false }: { inverted?: boolean }) {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -40,10 +37,18 @@ export function LanguageSwitcher() {
   return (
     <div
       ref={containerRef}
-      className="relative flex items-center rounded-md border border-zinc-200 bg-zinc-100 p-0.5 font-mono text-xs dark:border-zinc-800 dark:bg-zinc-900"
+      className={cn(
+        "relative flex items-center rounded-md border p-0.5 font-mono text-xs",
+        inverted
+          ? "border-white/25 bg-white/10 backdrop-blur-sm"
+          : "border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900"
+      )}
     >
       <span
-        className="pointer-events-none absolute top-0.5 h-[calc(100%-4px)] rounded bg-white shadow-sm dark:bg-zinc-700"
+        className={cn(
+          "pointer-events-none absolute top-0.5 h-[calc(100%-4px)] rounded shadow-sm",
+          inverted ? "bg-white/90" : "bg-white dark:bg-zinc-700"
+        )}
         style={{
           width: pillStyle.width,
           transform: `translateX(${pillStyle.x}px)`,
@@ -59,12 +64,16 @@ export function LanguageSwitcher() {
           }}
           onClick={() =>
             startNavigation(() => router.replace(pathname, { locale: l }))
-            }
+          }
           className={cn(
             "relative z-10 rounded px-2 py-1 transition-colors duration-300",
             locale === l
-              ? "text-zinc-900 dark:text-zinc-100"
-              : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-300"
+              ? inverted
+                ? "text-zinc-900"
+                : "text-zinc-900 dark:text-zinc-100"
+              : inverted
+                ? "text-zinc-300 hover:text-white"
+                : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-300"
           )}
         >
           {l}

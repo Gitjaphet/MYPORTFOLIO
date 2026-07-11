@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { NavigationProgressProvider } from "@/components/providers/navigation-progress";
 import { LoadingIndicator } from "@/components/layout/loading-indicator";
 
+
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const playfair = Playfair_Display({
@@ -56,6 +57,7 @@ export default async function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, playfair.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
+        
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider
             attribute="class"

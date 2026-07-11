@@ -19,7 +19,7 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { useNavigationProgress } from "@/components/providers/navigation-progress";
 import { cn } from "@/lib/utils";
 
-export function MobileNav() {
+export function MobileNav({ triggerClassName }: { triggerClassName?: string }) {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const router = useRouter();
@@ -29,7 +29,7 @@ export function MobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className={cn("md:hidden", triggerClassName)}>
           <MenuIcon className="h-5 w-5" />
           <span className="sr-only">Menu</span>
         </Button>
