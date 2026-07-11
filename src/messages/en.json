@@ -27,8 +27,22 @@
     }
   },
   "FeaturedProjects": {
-  "kicker": "// projets phares",
-  "title": "Ce que j'ai construit"
-}
+  "kicker": "// featured projects",
+  "title": "What I've built",
+  "viewSite": "View site",
+  "projects": {
+    "art-jatie": {
+      "name": "Art Jatie",
+      "tagline": "Art Jatie: e-commerce platform with multi-model AI assistant",
+      "description": "An e-commerce site selling Malagasy art with an AI assistant and a complete admin interface for a craft e-commerce store: point-of-sale system, order management, production planning, customer reviews.",
+      "features": [
+        "Point of sale (POS) with change calculation and MVola / Orange Money payment.",
+        "Kanban production planning: to make, in progress, ready to ship.",
+        "Customer review moderation and real-time order tracking."
+        ]
+      }
+    }
+  }
+  
 
 }

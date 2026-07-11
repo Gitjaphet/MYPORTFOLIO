@@ -1,34 +1,59 @@
-import type { IconType } from "react-icons";
+import type { ComponentType } from "react";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiFastapi,
+  SiPostgresql,
+  SiDocker,
+  SiGithubactions,
+  SiTraefikproxy,
+  SiCloudflare,
+  SiAnsible,
+  SiGrafana,
+  SiPrometheus,
+  SiN8N,
+} from "react-icons/si";
+import { Mail, Server, BrainCircuit, Boxes } from "lucide-react";
+
+type TechIcon = ComponentType<{ className?: string; style?: React.CSSProperties }>;
 
 export type Project = {
   slug: string;
-  name: string;
   domain: string;
   url: string;
+  tech: { label: string; Icon: TechIcon; color?: string }[];
+  screenshots: string[];
+};
+
+export type ProjectContent = Project & {
+  name: string;
+  tagline: string;
   description: string;
   features: string[];
-  tech: { label: string; colorClass: string }[];
-  screenshots: string[];
 };
 
 export const projects: Project[] = [
   {
     slug: "art-jatie",
-    name: "Art Jatie",
     domain: "artjatie.com/admin/dashboard",
     url: "https://artjatie.com",
-    description:
-      "Interface d'administration complète pour une boutique e-commerce artisanale : caisse point de vente, gestion de commandes, planning de production, avis clients.",
-    features: [
-      "Caisse (POS) avec calcul de monnaie et paiement MVola / Orange Money.",
-      "Planning de production en kanban : à fabriquer, en cours, prêt à livrer.",
-      "Modération des avis clients et suivi des commandes en temps réel.",
-    ],
     tech: [
-      { label: "Next.js", colorClass: "border-sky-900/40 text-sky-400" },
-      { label: "FastAPI", colorClass: "border-teal-900/40 text-teal-400" },
-      { label: "PostgreSQL", colorClass: "border-blue-900/40 text-blue-300" },
-      { label: "Cloudflare R2", colorClass: "border-orange-900/40 text-orange-300" },
+      { label: "Next.js", Icon: SiNextdotjs },
+      { label: "TypeScript", Icon: SiTypescript, color: "#3178C6" },
+      { label: "FastAPI", Icon: SiFastapi, color: "#009688" },
+      { label: "PostgreSQL", Icon: SiPostgresql, color: "#336791" },
+      { label: "Docker", Icon: SiDocker, color: "#2496ED" },
+      { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
+      { label: "Mailcow", Icon: Mail },
+      { label: "Traefik", Icon: SiTraefikproxy, color: "#24A1C1" },
+      { label: "Cloudflare R2", Icon: SiCloudflare, color: "#F38020" },
+      { label: "VPS", Icon: Server },
+      { label: "Ansible", Icon: SiAnsible, color: "#EE0000" },
+      { label: "Grafana", Icon: SiGrafana, color: "#F46800" },
+      { label: "Prometheus", Icon: SiPrometheus, color: "#E6522C" },
+      { label: "LLMs", Icon: BrainCircuit },
+      { label: "Embeddings", Icon: Boxes },
+      { label: "n8n", Icon: SiN8N, color: "#EA4B71" },
     ],
     screenshots: [
       "/images/projects/art-jatie-01-vue-ensemble.png",

@@ -28,8 +28,21 @@
   },
   "FeaturedProjects": {
   "kicker": "// projets phares",
-  "title": "Ce que j'ai construit"
-}
+  "title": "Ce que j'ai construit",
+  "viewSite": "Voir le site",
+  "projects": {
+    "art-jatie": {
+      "name": "Art Jatie",
+      "tagline": "Art Jatie : plateforme e-commerce avec assistant IA multi-modèles",
+      "description": "Un site e-commerce de vente d'art malgache avec une assistante IA et une interface d'administration complète pour une boutique e-commerce artisanale : caisse point de vente, gestion des commandes, planning de production, avis clients.",
+      "features": [
+        "Caisse (POS) avec calcul de monnaie et paiement MVola / Orange Money.",
+        "Planning de production en kanban : à fabriquer, en cours, prêt à livrer.",
+        "Modération des avis clients et suivi des commandes en temps réel."
+        ]
+      }
+    }
+  }
 
 }
 

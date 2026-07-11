@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { projects } from "@/lib/projects";
 import { ProjectCard } from "@/components/ui/project-card";
@@ -14,7 +16,16 @@ export function FeaturedProjects() {
 
       <div className="flex flex-col gap-8">
         {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+          <ProjectCard
+            key={project.slug}
+            project={{
+              ...project,
+              name: t(`projects.${project.slug}.name`),
+              tagline: t(`projects.${project.slug}.tagline`),
+              description: t(`projects.${project.slug}.description`),
+              features: t.raw(`projects.${project.slug}.features`) as string[],
+            }}
+          />
         ))}
       </div>
     </section>
