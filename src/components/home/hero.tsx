@@ -27,7 +27,22 @@ export function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <section className="relative -mt-20 overflow-hidden">
+    <section
+      className="relative -mt-20 overflow-hidden"
+      style={{ clipPath: "url(#hero-wave-clip)" }}
+    >
+      <svg width="0" height="0" className="absolute">
+        <defs>
+          <clipPath id="hero-wave-clip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0,0 L1,0 L1,0.94
+                C0.82,0.99 0.68,0.88 0.5,0.93
+                C0.32,0.97 0.18,0.87 0,0.93
+                Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
       <style>{`
         @keyframes floatY {
             0%, 100% { transform: translateY(0px); }

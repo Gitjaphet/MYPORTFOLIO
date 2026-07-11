@@ -8,8 +8,8 @@
   },
   "HomePage": {
     "badge": "Your Dev Boss",
-    "kicker": "// full-stack & devops",
-    "title": "I build products, from frontend to infra",
+    "kicker": "// full-stack Engineer & devops",
+    "title": "I help businesses navigate their digital transformation through robust, scalable, and secure custom solutions.",
     "subtitle": "Full-Stack & DevOps Developer",
     "description": "Next.js, Django, Odoo, FastAPI, Docker and everything in between.",
     "ctaPrimary": "View my projects",
@@ -25,6 +25,10 @@
       "cloud": "DevOps",
       "ai": "AI & Tools"
     }
-  }
+  },
+  "FeaturedProjects": {
+  "kicker": "// projets phares",
+  "title": "Ce que j'ai construit"
+}
 
 }

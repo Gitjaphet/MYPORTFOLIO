@@ -49,7 +49,7 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(0.97 0.025 85);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -123,8 +123,42 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      /* grille de points fine, façon schéma technique */
+      radial-gradient(oklch(0.7 0 0 / 0.35) 1px, transparent 1px),
+      /* couleurs de marque de la stack, en transparence */
+      radial-gradient(at 5% 10%, #3178C625 0px, transparent 42%),   /* TypeScript */
+      radial-gradient(at 45% 5%, #61DAFB22 0px, transparent 42%),   /* React */
+      radial-gradient(at 20% 53%, #3776AB20 0px, transparent 42%),  /* Python */
+      radial-gradient(at 60% 36%, #777BB420 0px, transparent 42%);  /* PHP */
+    background-size: 24px 24px, auto, auto, auto, auto;
+    background-attachment: fixed;
   }
+  .dark body {
+  background-image:
+    radial-gradient(oklch(1 0 0 / 0.04) 1px, transparent 1px),
+    radial-gradient(at 5% 10%, #3178C615 0px, transparent 42%),
+    radial-gradient(at 45% 5%, #61DAFB12 0px, transparent 42%),
+    radial-gradient(at 20% 53%, #F7DF1E10 0px, transparent 42%),
+    radial-gradient(at 60% 36%, #777BB412 0px, transparent 42%);
+  background-size: 24px 24px, auto, auto, auto, auto;
+  background-attachment: fixed;
+}
   html {
     @apply font-sans;
   }
+}
+
+.tech-glow-card {
+  position: relative;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(-30deg, var(--glow-color), transparent 40%, transparent 60%, var(--glow-color));
+}
+
+.tech-glow-card-inner {
+  position: relative;
+  background: var(--card);
+  border-radius: 9px;
+  z-index: 1;
 }
