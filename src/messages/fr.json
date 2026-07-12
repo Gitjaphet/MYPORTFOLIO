@@ -8,7 +8,7 @@
   },
   "HomePage": {
     "badge": "Your Dev Boss",
-    "kicker": "// Ingénieur full-stack & devops",
+    "kicker": "// Ingénieur full-stack & DevOps",
     "title": "J'accompagne les entreprises dans leur transformation numérique à travers des solutions sur mesure, robustes, scalables et sécurisées.",
     "subtitle": "Développeur Full-Stack & DevOps",
     "description": "Next.js, Django, Odoo, FastAPI, Docker, et tout ce qu'il faut entre les deux.",
@@ -42,7 +42,28 @@
         ]
       }
     }
-  }
+  },
+  "AboutSummary": {
+  "kicker": "// qui suis-je",
+  "title": "Développeur Full-Stack Python",
+  "description": "Chez INTC Madagascar, je porte plusieurs casquettes : intégrateur et développeur CMS (WordPress, Joomla, hébergement, SEO), développeur et consultant Odoo on-premise, et support de l'équipe infrastructure (Proxmox, Windows Server, réseau). En parallèle, je développe en freelance et sur des projets personnels avec Python (Django, FastAPI, IA) et Next.js/TypeScript.",
+  "cards": [
+    { "label": "CMS & ODOO — INTC", "description": "Intégration WordPress / Joomla, hébergement o2switch, SEO, et consulting Odoo on-premise." },
+    { "label": "INFRASTRUCTURE — INTC", "description": "Support admin réseau & systèmes : Proxmox, Windows Server, gestion d'imprimantes réseau." },
+    { "label": "FREELANCE & SIDE-PROJECTS", "description": "Python (Django, FastAPI, IA) et Next.js/TypeScript, en missions et projets personnels." }
+  ],
+  "method": {
+    "title": "MA MÉTHODE DE TRAVAIL",
+    "steps": [
+      "Comprendre le pourquoi",
+      "Localiser le problème",
+      "Définir la solution",
+      "Évaluer robustesse & scalabilité",
+      "Appliquer"
+    ]
+  },
+  "location": "Basé à Nosy Be, Madagascar — disponible pour missions à distance."
+}
 
 }
 

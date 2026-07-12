@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Playfair_Display, Rubik } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -12,6 +12,11 @@ import { LoadingIndicator } from "@/components/layout/loading-indicator";
 
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  variable: '--font-rubik',
+});
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -54,7 +59,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, playfair.variable, "font-sans", inter.variable)}
+      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, playfair.variable, rubik.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
         

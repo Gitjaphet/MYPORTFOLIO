@@ -7,6 +7,7 @@ import type { ProjectContent } from "@/lib/projects";
 import { TypewriterText } from "@/components/home/typewriter-text";
 import { ImageLightbox } from "@/components/ui/image-lightbox";
 import { useTranslations } from "next-intl";
+import { SiGithub } from "react-icons/si";
 
 const AUTOPLAY_MS = 4000;
 
@@ -210,21 +211,46 @@ export function ProjectCard({ project }: { project: ProjectContent }) {
             <h4 className="min-h-[1.75rem] font-heading text-xl italic text-zinc-900 dark:text-white">
               <TypewriterText text={project.name} speed={150} pauseDuration={3000} />
             </h4>
-            <a
-                href={project.url}
-                target="_blank"
-                rel="noreferrer"
-                className="ml-auto shrink-0 whitespace-nowrap rounded-lg border border-black/15 dark:border-white/15 px-3 py-1.5 font-mono text-xs text-zinc-600 dark:text-zinc-300 transition-colors hover:border-lime-400/40 hover:text-lime-400"
+            <div className="ml-auto flex shrink-0 items-center gap-2">
+                {project.githubUrl && (
+                    <motion.a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Voir le code source sur GitHub"
+                    whileHover={{ scale: 1.06 }}
+                    whileTap={{ scale: 0.96 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="group flex h-8 w-8 items-center justify-center rounded-lg border border-black/15 dark:border-white/15 text-zinc-600 dark:text-zinc-300 transition-colors duration-200 hover:border-lime-400/40 hover:text-lime-400"
                     >
-                {t("viewSite")} ↗
-            </a>
+                    <SiGithub
+                        className="h-4 w-4 transition-transform duration-300 group-hover:rotate-[8deg]"
+                        aria-hidden="true"
+                    />
+                    </motion.a>
+                )}
+                <motion.a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="group whitespace-nowrap rounded-lg border border-black/15 dark:border-white/15 px-3 py-1.5 font-mono text-xs text-zinc-600 dark:text-zinc-300 transition-colors duration-200 hover:border-lime-400/40 hover:text-lime-400"
+                >
+                    {t("viewSite")}{" "}
+                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    ↗
+                    </span>
+                </motion.a>
+                </div>
           </div>
 
-          <p className="mb-6 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
+          <p className="mb-6 font-body text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
 
           <ul className="mb-7 flex flex-col gap-3">
             {project.features.map((feature) => (
-              <li key={feature} className="flex gap-2.5 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+              <li key={feature} className="flex gap-2.5 font-body text-[14px] leading-relaxed text-zinc-700 dark:text-zinc-300">
                 <span className="mt-0.5 shrink-0 text-lime-400">+</span>
                 {feature}
               </li>

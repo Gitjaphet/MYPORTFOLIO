@@ -8,7 +8,7 @@
   },
   "HomePage": {
     "badge": "Your Dev Boss",
-    "kicker": "// full-stack Engineer & devops",
+    "kicker": "// full-stack Engineer & DevOps",
     "title": "I help businesses navigate their digital transformation through robust, scalable, and secure custom solutions.",
     "subtitle": "Full-Stack & DevOps Developer",
     "description": "Next.js, Django, Odoo, FastAPI, Docker and everything in between.",
@@ -42,7 +42,28 @@
         ]
       }
     }
-  }
+  },
+  "AboutSummary": {
+  "kicker": "// who I am",
+  "title": "Full-Stack Python Developer",
+  "description": "At INTC Madagascar, I wear several hats: CMS integrator and developer (WordPress, Joomla, hosting, SEO), Odoo on-premise developer and consultant, and support for the infrastructure team (Proxmox, Windows Server, networking). Alongside that, I work freelance and on personal projects with Python (Django, FastAPI, AI) and Next.js/TypeScript.",
+  "cards": [
+    { "label": "CMS & ODOO — INTC", "description": "WordPress / Joomla integration, o2switch hosting, SEO, and on-premise Odoo consulting." },
+    { "label": "INFRASTRUCTURE — INTC", "description": "Network & systems admin support: Proxmox, Windows Server, network printer management." },
+    { "label": "FREELANCE & SIDE PROJECTS", "description": "Python (Django, FastAPI, AI) and Next.js/TypeScript, on client work and personal projects." }
+  ],
+  "method": {
+    "title": "MY WORKING METHOD",
+    "steps": [
+      "Understand the why",
+      "Locate the problem",
+      "Define the solution",
+      "Assess robustness & scalability",
+      "Apply"
+    ]
+  },
+  "location": "Based in Nosy Be, Madagascar — available for remote work."
+}
   
 
 }

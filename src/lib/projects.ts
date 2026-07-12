@@ -21,6 +21,7 @@ export type Project = {
   slug: string;
   domain: string;
   url: string;
+  githubUrl?: string;
   tech: { label: string; Icon: TechIcon; color?: string }[];
   screenshots: string[];
 };
@@ -37,6 +38,7 @@ export const projects: Project[] = [
     slug: "art-jatie",
     domain: "artjatie.com/admin/dashboard",
     url: "https://artjatie.com",
+    githubUrl: "https://github.com/Gitjaphet/Art-Jatie-Boutique",
     tech: [
       { label: "Next.js", Icon: SiNextdotjs },
       { label: "TypeScript", Icon: SiTypescript, color: "#3178C6" },
