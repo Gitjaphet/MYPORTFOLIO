@@ -12,6 +12,9 @@ import {
   SiGrafana,
   SiPrometheus,
   SiN8N,
+  SiDjango,
+  SiHtmx,
+  SiChartdotjs,
 } from "react-icons/si";
 import { Mail, Server, BrainCircuit, Boxes } from "lucide-react";
 
@@ -64,6 +67,26 @@ export const projects: Project[] = [
       "/images/projects/art-jatie-04-caisse-paiement.png",
       "/images/projects/art-jatie-05-commandes.png",
       "/images/projects/art-jatie-06-avis-clients.png",
+    ],
+  },
+  {
+    slug: "budgy",
+    domain: "monentreprise.budgy.artjatie.com/resume",
+    url: "https://budgy.artjatie.com",
+    githubUrl: "https://github.com/Gitjaphet/Budgy",
+    tech: [
+      { label: "Django", Icon: SiDjango, color: "#092E20" },
+      { label: "PostgreSQL", Icon: SiPostgresql, color: "#336791" },
+      { label: "HTMX", Icon: SiHtmx, color: "#3D72D7" },
+      { label: "Chart.js", Icon: SiChartdotjs, color: "#FF6384" },
+      { label: "Docker", Icon: SiDocker, color: "#2496ED" },
+      { label: "Traefik", Icon: SiTraefikproxy, color: "#24A1C1" },
+      { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
+    ],
+    screenshots: [
+      "/images/projects/budgy-01-dashboard.png",
+      "/images/projects/budgy-02-resume.png",
+      "/images/projects/budgy-03-depenses.png",
     ],
   },
 ];

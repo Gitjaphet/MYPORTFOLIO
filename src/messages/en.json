@@ -13,9 +13,9 @@
     "subtitle": "Full-Stack & DevOps Developer",
     "description": "Next.js, Django, Odoo, FastAPI, Docker and everything in between.",
     "ctaPrimary": "View my projects",
-    "ctaSecondary": "Get in touch" 
+    "ctaSecondary": "Get in touch"
   },
-  
+
   "TechStack": {
     "kicker": "// stack & tools",
     "title": "What I use day to day",
@@ -27,43 +27,51 @@
     }
   },
   "FeaturedProjects": {
-  "kicker": "// featured projects",
-  "title": "What I've built",
-  "viewSite": "View site",
-  "projects": {
-    "art-jatie": {
-      "name": "Art Jatie",
-      "tagline": "Art Jatie: e-commerce platform with multi-model AI assistant",
-      "description": "An e-commerce site selling Malagasy art with an AI assistant and a complete admin interface for a craft e-commerce store: point-of-sale system, order management, production planning, customer reviews.",
-      "features": [
-        "Point of sale (POS) with change calculation and MVola / Orange Money payment.",
-        "Kanban production planning: to make, in progress, ready to ship.",
-        "Customer review moderation and real-time order tracking."
+    "kicker": "// featured projects",
+    "title": "What I've built",
+    "viewSite": "View site",
+    "projects": {
+      "art-jatie": {
+        "name": "Art Jatie",
+        "tagline": "Art Jatie: e-commerce platform with multi-model AI assistant",
+        "description": "An e-commerce site selling Malagasy art with an AI assistant and a complete admin interface for a craft e-commerce store: point-of-sale system, order management, production planning, customer reviews.",
+        "features": [
+          "Point of sale (POS) with change calculation and MVola / Orange Money payment.",
+          "Kanban production planning: to make, in progress, ready to ship.",
+          "Customer review moderation and real-time order tracking."
+        ]
+      },
+      "budgy": {
+        "name": "Budgy",
+        "tagline": "Budgy: multi-tenant expense management SaaS with HTMX",
+        "description": "A multi-tenant SaaS application built with Django, where each organization has its own isolated PostgreSQL schema via django-tenants, accessible through a dedicated subdomain. The interface relies on HTMX for smooth navigation without a separate JavaScript frontend.",
+        "features": [
+          "Real multi-tenancy with per-schema PostgreSQL isolation and automatic subdomain routing via Traefik.",
+          "Dashboard with monthly KPIs and interactive charts (Chart.js): category breakdown, 6-month evolution.",
+          "HTMX navigation (hx-boost) for near-instant page loads without full page reloads."
         ]
       }
     }
   },
   "AboutSummary": {
-  "kicker": "// who I am",
-  "title": "Full-Stack Python Developer",
-  "description": "At INTC Madagascar, I wear several hats: CMS integrator and developer (WordPress, Joomla, hosting, SEO), Odoo on-premise developer and consultant, and support for the infrastructure team (Proxmox, Windows Server, networking). Alongside that, I work freelance and on personal projects with Python (Django, FastAPI, AI) and Next.js/TypeScript.",
-  "cards": [
-    { "label": "CMS & ODOO — INTC", "description": "WordPress / Joomla integration, o2switch hosting, SEO, and on-premise Odoo consulting." },
-    { "label": "INFRASTRUCTURE — INTC", "description": "Network & systems admin support: Proxmox, Windows Server, network printer management." },
-    { "label": "FREELANCE & SIDE PROJECTS", "description": "Python (Django, FastAPI, AI) and Next.js/TypeScript, on client work and personal projects." }
-  ],
-  "method": {
-    "title": "MY WORKING METHOD",
-    "steps": [
-      "Understand the why",
-      "Locate the problem",
-      "Define the solution",
-      "Assess robustness & scalability",
-      "Apply"
-    ]
-  },
-  "location": "Based in Nosy Be, Madagascar — available for remote work."
-}
-  
-
+    "kicker": "// who I am",
+    "title": "Full-Stack Python Developer",
+    "description": "At INTC Madagascar, I wear several hats: CMS integrator and developer (WordPress, Joomla, hosting, SEO), Odoo on-premise developer and consultant, and support for the infrastructure team (Proxmox, Windows Server, networking). Alongside that, I work freelance and on personal projects with Python (Django, FastAPI, AI) and Next.js/TypeScript.",
+    "cards": [
+      { "label": "CMS & ODOO — INTC", "description": "WordPress / Joomla integration, o2switch hosting, SEO, and on-premise Odoo consulting." },
+      { "label": "INFRASTRUCTURE — INTC", "description": "Network & systems admin support: Proxmox, Windows Server, network printer management." },
+      { "label": "FREELANCE & SIDE PROJECTS", "description": "Python (Django, FastAPI, AI) and Next.js/TypeScript, on client work and personal projects." }
+    ],
+    "method": {
+      "title": "MY WORKING METHOD",
+      "steps": [
+        "Understand the why",
+        "Locate the problem",
+        "Define the solution",
+        "Assess robustness & scalability",
+        "Apply"
+      ]
+    },
+    "location": "Based in Nosy Be, Madagascar — available for remote work."
+  }
 }
