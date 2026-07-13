@@ -17,8 +17,12 @@ import {
   SiChartdotjs,
   SiOdoo,
   SiPython,
+  SiJoomla,
+  SiPhp,
+  SiMysql,
+  SiApache,
 } from "react-icons/si";
-import { Mail, Server, BrainCircuit, Boxes, Clock } from "lucide-react";
+import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search } from "lucide-react";
 
 type TechIcon = ComponentType<{ className?: string; style?: React.CSSProperties }>;
 
@@ -110,6 +114,23 @@ export const projects: Project[] = [
       "/images/projects/crm-call-center-02-appel-en-cours.png",
       "/images/projects/crm-call-center-03-qualification.png",
       "/images/projects/crm-call-center-04-pipeline.png",
+    ],
+  },
+  {
+    slug: "gioia-adventure",
+    domain: "gioiaadventure.com/fr",
+    url: "https://gioiaadventure.com",
+    tech: [
+      { label: "Joomla", Icon: SiJoomla, color: "#5091CD" },
+      { label: "PHP", Icon: SiPhp, color: "#777BB4" },
+      { label: "MySQL", Icon: SiMysql, color: "#4479A1" },
+      { label: "Apache", Icon: SiApache, color: "#D22128" },
+      { label: "o2switch", Icon: Server },
+      { label: "Multilingue", Icon: Languages },
+      { label: "SEO", Icon: Search },
+    ],
+    screenshots: [
+      "/images/projects/gioia-adventure-01-accueil.png",
     ],
   },
 ];

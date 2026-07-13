@@ -62,6 +62,16 @@
           "Scheduled task (cron) that reactivates pending leads once the follow-up time is reached, with no manual action needed.",
           "Custom call widget (OWL) with one-click qualification: voicemail, callback, scheduled callback, meeting, out of scope, wrong number."
         ]
+      },
+      "gioia-adventure": {
+        "name": "Gioia Adventure",
+        "tagline": "Gioia Adventure: Joomla showcase site for a Nosy Be tour operator",
+        "description": "A multilingual showcase site (French / Italian) for Gioia Adventure, a tour operator based in Hell-Ville, Nosy Be, offering excursions, tours, and catamaran cruises across Madagascar. Built on Joomla with a category-based content architecture and o2switch shared hosting.",
+        "features": [
+          "Joomla template integration and customization: brand-specific visual identity, responsive layout, dedicated sections per offer type (excursions, tours, cruises).",
+          "Multilingual FR/IT content structure with per-language articles, menus, and navigation.",
+          "o2switch hosting setup and on-page SEO targeting Nosy Be and Madagascar tourism searches."
+        ]
       }
     }
   },

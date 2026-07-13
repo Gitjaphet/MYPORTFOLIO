@@ -62,6 +62,16 @@
           "Tâche planifiée (cron) qui réactive les leads en attente dès l'heure de relance atteinte, sans intervention manuelle.",
           "Widget d'appel custom (OWL) avec qualification en un clic : répondeur, rappel, rappel programmé, RDV, hors cible, faux numéro."
         ]
+      },
+      "gioia-adventure": {
+        "name": "Gioia Adventure",
+        "tagline": "Gioia Adventure : site vitrine Joomla pour un tour opérateur à Nosy Be",
+        "description": "Un site vitrine multilingue (français / italien) pour Gioia Adventure, tour opérateur basé à Hell-Ville, Nosy Be, proposant excursions, circuits et croisières en catamaran à travers Madagascar. Développé sous Joomla avec une architecture de contenu par catégories et un hébergement mutualisé chez o2switch.",
+        "features": [
+          "Intégration et personnalisation du template Joomla : identité visuelle propre à la marque, mise en page responsive, sections dédiées par type d'offre (excursions, circuits, croisières).",
+          "Structure de contenu multilingue FR/IT avec gestion des articles, menus et navigation dédiés par langue.",
+          "Configuration de l'hébergement o2switch et optimisation SEO on-page pour cibler les recherches liées au tourisme à Nosy Be et Madagascar."
+        ]
       }
     }
   },
