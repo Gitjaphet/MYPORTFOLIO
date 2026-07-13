@@ -44,7 +44,7 @@ export async function sendContactEmail(
 
   try {
     await resend.emails.send({
-      from: "Portfolio <contact@japhet.medevstack.com>",
+      from: "Portfolio <onboarding@resend.dev>",
       to: process.env.CONTACT_EMAIL_TO ?? "japhetvaleureux@gmail.com",
       replyTo: parsed.data.email,
       subject: `[Portfolio] ${parsed.data.subject}`,
