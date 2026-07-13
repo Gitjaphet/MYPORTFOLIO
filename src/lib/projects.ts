@@ -97,6 +97,7 @@ export const projects: Project[] = [
     domain: "localhost:8069/odoo/action-512",
     url: "",
     videoUrl: "https://youtu.be/Hsc6aQGq7oI?list=RDHsc6aQGq7oI",
+    githubUrl: "https://github.com/Gitjaphet/crm_call_center",
     tech: [
       { label: "Odoo 19", Icon: SiOdoo, color: "#714B67" },
       { label: "Python", Icon: SiPython, color: "#3776AB" },
