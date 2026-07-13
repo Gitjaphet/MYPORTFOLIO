@@ -30,6 +30,7 @@
     "kicker": "// featured projects",
     "title": "What I've built",
     "viewSite": "View site",
+    "viewDemo": "Watch demo",
     "projects": {
       "art-jatie": {
         "name": "Art Jatie",
@@ -49,6 +50,17 @@
           "Real multi-tenancy with per-schema PostgreSQL isolation and automatic subdomain routing via Traefik.",
           "Dashboard with monthly KPIs and interactive charts (Chart.js): category breakdown, 6-month evolution.",
           "HTMX navigation (hx-boost) for near-instant page loads without full page reloads."
+        ]
+      },
+      "crm-call-center": {
+        "name": "CRM Call Center",
+        "tagline": "CRM Call Center: automated follow-ups and outbound call campaigns",
+        "description": "A custom Odoo module built for a B2B sales setting team receiving leads to process daily. It turns the standard CRM into a real call center tool: prioritized call queue, multi-day automated follow-ups, and a call widget built directly into the interface.",
+        "features": [
+          "Smart call queue sorted by priority based on follow-up day, automatically excluding already-processed leads.",
+          "Automated follow-up engine: switches morning/afternoon then reschedules for the next day, up to 6 attempts before closing.",
+          "Scheduled task (cron) that reactivates pending leads once the follow-up time is reached, with no manual action needed.",
+          "Custom call widget (OWL) with one-click qualification: voicemail, callback, scheduled callback, meeting, out of scope, wrong number."
         ]
       }
     }

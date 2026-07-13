@@ -30,6 +30,7 @@
     "kicker": "// projets phares",
     "title": "Ce que j'ai construit",
     "viewSite": "Voir le site",
+    "viewDemo": "Voir la démo",
     "projects": {
       "art-jatie": {
         "name": "Art Jatie",
@@ -49,6 +50,17 @@
           "Multi-tenant réel avec isolation par schéma PostgreSQL et routage automatique par sous-domaine via Traefik.",
           "Dashboard avec KPIs mensuels et graphiques interactifs (Chart.js) : répartition par catégorie, évolution sur 6 mois.",
           "Navigation HTMX (hx-boost) pour un chargement quasi instantané, sans rechargement complet de page."
+        ]
+      },
+      "crm-call-center": {
+        "name": "CRM Call Center",
+        "tagline": "CRM Call Center : automatisation des relances et campagnes d'appels sortants",
+        "description": "Un module Odoo développé sur mesure pour une équipe de setting commercial B2B recevant des leads à traiter quotidiennement. Le CRM standard devient un véritable outil de centre d'appels : file d'appel priorisée, relances automatiques sur plusieurs jours, et widget d'appel intégré directement dans l'interface.",
+        "features": [
+          "File d'appel intelligente triée par priorité selon le jour de relance, avec exclusion automatique des dossiers déjà traités.",
+          "Moteur de relance automatique : bascule matin/après-midi puis reprogrammation du lendemain, jusqu'à 6 tentatives avant clôture.",
+          "Tâche planifiée (cron) qui réactive les leads en attente dès l'heure de relance atteinte, sans intervention manuelle.",
+          "Widget d'appel custom (OWL) avec qualification en un clic : répondeur, rappel, rappel programmé, RDV, hors cible, faux numéro."
         ]
       }
     }

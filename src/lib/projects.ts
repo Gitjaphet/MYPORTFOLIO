@@ -15,8 +15,10 @@ import {
   SiDjango,
   SiHtmx,
   SiChartdotjs,
+  SiOdoo,
+  SiPython,
 } from "react-icons/si";
-import { Mail, Server, BrainCircuit, Boxes } from "lucide-react";
+import { Mail, Server, BrainCircuit, Boxes, Clock } from "lucide-react";
 
 type TechIcon = ComponentType<{ className?: string; style?: React.CSSProperties }>;
 
@@ -25,6 +27,7 @@ export type Project = {
   domain: string;
   url: string;
   githubUrl?: string;
+  videoUrl?: string;
   tech: { label: string; Icon: TechIcon; color?: string }[];
   screenshots: string[];
 };
@@ -87,6 +90,25 @@ export const projects: Project[] = [
       "/images/projects/budgy-01-dashboard.png",
       "/images/projects/budgy-02-resume.png",
       "/images/projects/budgy-03-depenses.png",
+    ],
+  },
+  {
+    slug: "crm-call-center",
+    domain: "localhost:8069/odoo/action-512",
+    url: "",
+    videoUrl: "https://youtu.be/Hsc6aQGq7oI?list=RDHsc6aQGq7oI",
+    tech: [
+      { label: "Odoo 19", Icon: SiOdoo, color: "#714B67" },
+      { label: "Python", Icon: SiPython, color: "#3776AB" },
+      { label: "OWL", Icon: Boxes },
+      { label: "PostgreSQL", Icon: SiPostgresql, color: "#336791" },
+      { label: "Cron Jobs", Icon: Clock },
+    ],
+    screenshots: [
+      "/images/projects/crm-call-center-01-session-appel.png",
+      "/images/projects/crm-call-center-02-appel-en-cours.png",
+      "/images/projects/crm-call-center-03-qualification.png",
+      "/images/projects/crm-call-center-04-pipeline.png",
     ],
   },
 ];

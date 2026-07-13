@@ -7,7 +7,7 @@ import type { ProjectContent } from "@/lib/projects";
 import { TypewriterText } from "@/components/home/typewriter-text";
 import { ImageLightbox } from "@/components/ui/image-lightbox";
 import { useTranslations } from "next-intl";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiYoutube } from "react-icons/si";
 
 const AUTOPLAY_MS = 4000;
 
@@ -228,21 +228,36 @@ export function ProjectCard({ project }: { project: ProjectContent }) {
                         aria-hidden="true"
                     />
                     </motion.a>
-                )}
-                <motion.a
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                    className="group whitespace-nowrap rounded-lg border border-black/15 dark:border-white/15 px-3 py-1.5 font-mono text-xs text-zinc-600 dark:text-zinc-300 transition-colors duration-200 hover:border-lime-400/40 hover:text-lime-400"
-                >
-                    {t("viewSite")}{" "}
-                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                    ↗
-                    </span>
-                </motion.a>
+                  )}
+                  {project.url ? (
+                    <motion.a
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                      className="group whitespace-nowrap rounded-lg border border-black/15 dark:border-white/15 px-3 py-1.5 font-mono text-xs text-zinc-600 dark:text-zinc-300 transition-colors duration-200 hover:border-lime-400/40 hover:text-lime-400"
+                    >
+                      {t("viewSite")}{" "}
+                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                        ↗
+                      </span>
+                    </motion.a>
+                  ) : project.videoUrl ? (
+                    <motion.a
+                      href={project.videoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                      className="group flex items-center gap-1.5 whitespace-nowrap rounded-lg border border-black/15 dark:border-white/15 px-3 py-1.5 font-mono text-xs text-zinc-600 dark:text-zinc-300 transition-colors duration-200 hover:border-lime-400/40 hover:text-lime-400"
+                    >
+                      <SiYoutube className="h-3.5 w-3.5 text-red-500" />
+                      {t("viewDemo")}
+                    </motion.a>
+                  ) : null}
                 </div>
           </div>
 
