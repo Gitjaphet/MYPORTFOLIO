@@ -72,7 +72,7 @@ export const projects: Project[] = [
   {
     slug: "budgy",
     domain: "monentreprise.budgy.artjatie.com/resume",
-    url: "https://budgy.artjatie.com",
+    url: "https://budgy.medevstack.com",
     githubUrl: "https://github.com/Gitjaphet/Budgy",
     tech: [
       { label: "Django", Icon: SiDjango, color: "#092E20" },
