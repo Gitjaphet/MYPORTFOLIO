@@ -131,6 +131,8 @@ export const projects: Project[] = [
     ],
     screenshots: [
       "/images/projects/gioia-adventure-01-accueil.png",
+      "/images/projects/o2switch.png",
+      "/images/projects/o2switch2.png"
     ],
   },
 ];
