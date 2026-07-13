@@ -96,7 +96,7 @@ export const projects: Project[] = [
     slug: "crm-call-center",
     domain: "localhost:8069/odoo/action-512",
     url: "",
-    videoUrl: "https://youtu.be/Hsc6aQGq7oI?list=RDHsc6aQGq7oI",
+    videoUrl: "https://youtu.be/QJah_xOpSFQ",
     githubUrl: "https://github.com/Gitjaphet/crm_call_center",
     tech: [
       { label: "Odoo 19", Icon: SiOdoo, color: "#714B67" },
