@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ContactInfo } from "@/components/contact/contact-info";
+import { ContactMap } from "@/components/contact/contact-map";
 import { Reveal } from "@/components/ui/reveal";
 
 type Props = {
@@ -48,6 +49,10 @@ export default async function ContactPage({ params }: Props) {
           <ContactInfo />
         </Reveal>
       </div>
+
+      <Reveal delay={0.3}>
+        <ContactMap locale={locale} />
+      </Reveal>
     </main>
   );
 }

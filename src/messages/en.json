@@ -143,6 +143,14 @@
       "availability": "Available for freelance work",
       "responseTime": "Usual response time: under 24h",
       "location": "Based in Nosy Be, Madagascar — available remotely"
+    },
+    "map": {
+      "eyebrow": "// where to find me",
+      "title": "Based in Nosy Be, Madagascar",
+      "subtitle": "Available for remote missions worldwide, with the timezone flexibility that comes with it.",
+      "address": "Nosy Be, Diana Region, Madagascar",
+      "openInMaps": "Open in Google Maps",
+      "iframeTitle": "Japhet Bezanaka's location in Nosy Be, Madagascar"
     }
   }
 }
