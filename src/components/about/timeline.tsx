@@ -8,6 +8,8 @@ import { timelineEntries } from "@/lib/timeline";
 import { Reveal } from "@/components/ui/reveal";
 import { Lock, ImageOff } from "lucide-react";
 
+const CARD_COLORS = ["#714B67", "#F38020", "#61DAFB"];
+
 export function Timeline() {
   const t = useTranslations("About.timeline");
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -35,6 +37,7 @@ export function Timeline() {
             const isEven = i % 2 === 0;
             const isActive = activeIndex === i;
             const title = t(`items.${entry.key}.title`);
+            const glowColor = CARD_COLORS[i % CARD_COLORS.length];
 
             return (
               <motion.div
@@ -57,21 +60,24 @@ export function Timeline() {
                 />
 
                 <div
-                  className={`flex-1 rounded-xl border p-5 transition-all duration-300 ${
-                    isActive
-                      ? "border-lime-400/40 bg-white shadow-sm dark:bg-white/[0.04]"
-                      : "border-zinc-200 bg-white dark:border-white/10 dark:bg-white/[0.02]"
-                  } ${isEven ? "md:text-right" : ""}`}
+                  style={{ "--glow-color": glowColor } as React.CSSProperties}
+                  className="tech-glow-card flex-1"
                 >
-                  <p className="mb-1 font-mono text-xs tracking-wide text-lime-500 dark:text-lime-400">
-                    {entry.period}
-                  </p>
-                  <h3 className="mb-1.5 font-body text-[15px] font-semibold text-zinc-900 dark:text-white">
-                    {title}
-                  </h3>
-                  <p className="font-body text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400">
-                    {t(`items.${entry.key}.description`)}
-                  </p>
+                  <div
+                    className={`tech-glow-card-inner h-full p-5 transition-transform duration-300 hover:-translate-y-0.5 ${
+                      isEven ? "md:text-right" : ""
+                    }`}
+                  >
+                    <p className="mb-1 font-mono text-xs tracking-wide text-lime-500 dark:text-lime-400">
+                      {entry.period}
+                    </p>
+                    <h3 className="mb-1.5 font-body text-[15px] font-semibold text-zinc-900 dark:text-white">
+                      {title}
+                    </h3>
+                    <p className="font-body text-[14px] leading-relaxed text-zinc-700 dark:text-zinc-300">
+                      {t(`items.${entry.key}.description`)}
+                    </p>
+                  </div>
                 </div>
 
                 <div className="relative aspect-[4/3] flex-1 overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100 dark:border-white/10 dark:bg-zinc-900">
