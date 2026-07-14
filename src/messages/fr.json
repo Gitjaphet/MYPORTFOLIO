@@ -181,6 +181,9 @@
     "timeline": {
       "kicker": "// mon parcours",
       "title": "Formation & étapes clés",
+      "unlocked": "Débloqué",
+      "hoverToReveal": "Survolez pour révéler",
+      "placeholder": "Photo à venir",
       "items": {
         "bacc": {
           "title": "Baccalauréat, série générale",

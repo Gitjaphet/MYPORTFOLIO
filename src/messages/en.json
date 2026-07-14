@@ -181,6 +181,9 @@
     "timeline": {
       "kicker": "// my background",
       "title": "Education & key milestones",
+      "unlocked": "Unlocked",
+      "hoverToReveal": "Hover to reveal",
+      "placeholder": "Photo coming soon",
       "items": {
         "bacc": {
           "title": "Baccalauréat, general track",
