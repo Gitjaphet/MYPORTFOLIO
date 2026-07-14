@@ -152,5 +152,10 @@
       "openInMaps": "Open in Google Maps",
       "iframeTitle": "Japhet Bezanaka's location in Nosy Be, Madagascar"
     }
+  },
+  "Footer": {
+    "location": "Nosy Be, Madagascar",
+    "builtWith": "Next.js · Tailwind · deployed on Contabo VPS",
+    "nowBuilding": "Currently building: Budgy"
   }
 }

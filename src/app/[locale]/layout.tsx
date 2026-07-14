@@ -9,6 +9,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { NavigationProgressProvider } from "@/components/providers/navigation-progress";
 import { LoadingIndicator } from "@/components/layout/loading-indicator";
+import { Footer } from "@/components/layout/footer";
 
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
@@ -73,6 +74,7 @@ export default async function RootLayout({
             <NavigationProgressProvider>
               <Header />
               <main className="pt-20">{children}</main>
+              <Footer locale={locale} />
               <LoadingIndicator />
             </NavigationProgressProvider>
           </ThemeProvider>

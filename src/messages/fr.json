@@ -152,6 +152,12 @@
       "openInMaps": "Ouvrir dans Google Maps",
       "iframeTitle": "Localisation de Japhet Bezanaka à Nosy Be, Madagascar"
     }
+  },
+   "Footer": {
+    "location": "Nosy Be, Madagascar",
+    "builtWith": "Next.js · Tailwind · déployé sur VPS Contabo",
+    "nowBuilding": "En ce moment : Budgy"
   }
+
 
 }
