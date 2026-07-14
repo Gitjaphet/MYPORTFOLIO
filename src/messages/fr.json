@@ -125,7 +125,7 @@
       "subjectPlaceholder": "Développement d'une application web...",
       "message": "Message",
       "messagePlaceholder": "Décrivez votre projet ou votre besoin...",
-      "submit": "Envoyer le message",
+      "submit": "Envoyer",
       "sending": "Envoi en cours...",
       "success": "Message envoyé, merci ! Je reviens vers vous rapidement.",
       "error": "Une erreur est survenue. Réessayez ou écrivez-moi directement par email."

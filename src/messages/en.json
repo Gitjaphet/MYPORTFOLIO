@@ -125,7 +125,7 @@
       "subjectPlaceholder": "Building a web application...",
       "message": "Message",
       "messagePlaceholder": "Describe your project or need...",
-      "submit": "Send message",
+      "submit": "Send",
       "sending": "Sending...",
       "success": "Message sent, thanks! I'll get back to you shortly.",
       "error": "Something went wrong. Please try again or email me directly."
