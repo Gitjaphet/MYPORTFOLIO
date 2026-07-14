@@ -95,5 +95,17 @@
       ]
     },
     "location": "Based in Nosy Be, Madagascar — available for remote work."
+  },
+  "ContactTeaser": {
+    "kicker": "// contact",
+    "title": "Let's talk about your project",
+    "description": "Odoo project, custom website, or a hand with your infrastructure? I usually reply within 24h.",
+    "links": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "cta": "Get in touch"
   }
 }
