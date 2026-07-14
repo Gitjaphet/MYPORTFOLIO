@@ -167,6 +167,44 @@
       "tech": "Technologies utilisées"
     }
   },
+  "About": {
+    "meta": {
+      "title": "À propos — Japhet Bezanaka",
+      "description": "Développeur full-stack et administrateur système basé à Nosy Be, Madagascar. Parcours, formation et méthode de travail."
+    },
+    "hero": {
+      "badge": "Qui suis-je",
+      "eyebrow": "// à propos",
+      "title": "Derrière le code",
+      "subtitle": "Ingénieur télécom devenu développeur full-stack, avec un pied dans l'infrastructure et l'autre dans le code."
+    },
+    "timeline": {
+      "kicker": "// mon parcours",
+      "title": "Formation & étapes clés",
+      "items": {
+        "bacc": {
+          "title": "Baccalauréat, série générale",
+          "description": "Lycée de Fenerive-Est — Mention Assez-Bien."
+        },
+        "english-ylf": {
+          "title": "Formation en anglais",
+          "description": "YLF (Youth Light of the Future)."
+        },
+        "licence-stic": {
+          "title": "Licence STIC",
+          "description": "École Supérieure Polytechnique d'Antsiranana."
+        },
+        "beach-cleanup": {
+          "title": "Lead English Club — Beach Clean Up",
+          "description": "Organisation d'actions de nettoyage de plage à Toamasina avec le club d'anglais."
+        },
+        "master-tr": {
+          "title": "Master M2, Télécommunications & Réseaux",
+          "description": "Mention Honorable — projet de fin d'études."
+        }
+      }
+    }
+  },
    "Footer": {
     "location": "Nosy Be, Madagascar",
     "builtWith": "Next.js · Tailwind · déployé sur VPS Contabo",
