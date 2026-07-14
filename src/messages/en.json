@@ -158,9 +158,14 @@
       "title": "Projects — Japhet Bezanaka",
       "description": "A look at my work: e-commerce, SaaS, custom Odoo modules, and CMS sites for clients in Madagascar and beyond."
     },
+    "badge": "Technical portfolio",
     "eyebrow": "// all my projects",
     "title": "What I've built",
-    "subtitle": "A selection of recent projects, from AI-powered e-commerce to custom Odoo modules and client showcase sites."
+    "subtitle": "A selection of recent projects, from AI-powered e-commerce to custom Odoo modules and client showcase sites.",
+    "stats": {
+      "projects": "Projects delivered",
+      "tech": "Technologies used"
+    }
   },
   "Footer": {
     "location": "Nosy Be, Madagascar",
