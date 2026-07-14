@@ -150,6 +150,13 @@ export function Hero() {
             >
               <Mail className="h-5 w-5" />
             </a>
+            <a
+              href="https://wa.me/261327756859"
+              aria-label="Whatsapp"
+              className="text-zinc-400 transition-colors hover:text-white"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
           </div>
         </div>
 

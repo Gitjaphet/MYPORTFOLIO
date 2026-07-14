@@ -107,6 +107,43 @@
       "github": "GitHub"
     },
     "cta": "Me contacter"
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contact — Japhet Bezanaka",
+      "description": "Discutons de votre projet : développement full-stack, DevOps, Odoo. Réponse sous 24h."
+    },
+    "eyebrow": "// me contacter",
+    "title": "Parlons de votre projet",
+    "subtitle": "Une idée, une mission freelance, ou juste une question technique. Je réponds en général sous 24h.",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Développement d'une application web...",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou votre besoin...",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé, merci ! Je reviens vers vous rapidement.",
+      "error": "Une erreur est survenue. Réessayez ou écrivez-moi directement par email."
+    },
+    "info": {
+      "email": {
+        "label": "Email"
+      },
+      "github": {
+        "label": "GitHub"
+      },
+      "linkedin": {
+        "label": "LinkedIn"
+      },
+      "availability": "Disponible pour missions freelance",
+      "responseTime": "Temps de réponse habituel : moins de 24h",
+      "location": "Basé à Nosy Be, Madagascar — disponible à distance"
+    }
   }
 
 }
