@@ -31,7 +31,7 @@ export default async function ContactPage({ params }: Props) {
           {t("eyebrow")}
         </p>
         <h1 className="mt-3 min-h-[1.2em] font-serif text-4xl italic tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-5xl">
-          <TypewriterText text={t("title")} speed={45} pauseDuration={2500} />
+          <TypewriterText text={t("title")} speed={100} pauseDuration={2500} />
         </h1>
         <p className="mt-4 max-w-xl text-neutral-600 dark:text-neutral-400">
           {t("subtitle")}
