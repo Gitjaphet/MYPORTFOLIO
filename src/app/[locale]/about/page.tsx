@@ -25,7 +25,6 @@ export default async function AboutPage({ params }: Props) {
   return (
     <>
       <PageHero
-        badge={t("hero.badge")}
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}

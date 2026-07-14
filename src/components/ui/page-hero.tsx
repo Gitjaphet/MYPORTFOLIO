@@ -33,7 +33,7 @@ export function PageHero({
   stats,
   icon,
 }: {
-  badge: string;
+  badge?: string;
   eyebrow: string;
   title: string;
   subtitle: string;
@@ -80,10 +80,12 @@ export function PageHero({
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_rgba(163,230,53,0.08)_0%,_transparent_60%)]" />
 
       <div className="relative mx-auto flex min-h-[70vh] max-w-5xl flex-col items-center px-6 pt-32 pb-20 text-center">
-        <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs text-lime-400 backdrop-blur-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-lime-400" />
-          {badge}
-        </div>
+        {badge && (
+            <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs text-lime-400 backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-lime-400" />
+                {badge}
+            </div>
+        )}
 
         <p className="mb-3 font-mono text-sm text-lime-400">{eyebrow}</p>
 
