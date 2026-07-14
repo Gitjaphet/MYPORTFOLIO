@@ -153,6 +153,15 @@
       "iframeTitle": "Japhet Bezanaka's location in Nosy Be, Madagascar"
     }
   },
+  "Projects": {
+    "meta": {
+      "title": "Projects — Japhet Bezanaka",
+      "description": "A look at my work: e-commerce, SaaS, custom Odoo modules, and CMS sites for clients in Madagascar and beyond."
+    },
+    "eyebrow": "// all my projects",
+    "title": "What I've built",
+    "subtitle": "A selection of recent projects, from AI-powered e-commerce to custom Odoo modules and client showcase sites."
+  },
   "Footer": {
     "location": "Nosy Be, Madagascar",
     "builtWith": "Next.js · Tailwind · deployed on Contabo VPS",

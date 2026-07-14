@@ -153,6 +153,15 @@
       "iframeTitle": "Localisation de Japhet Bezanaka à Nosy Be, Madagascar"
     }
   },
+  "Projects": {
+    "meta": {
+      "title": "Projets — Japhet Bezanaka",
+      "description": "Découvrez mes réalisations : e-commerce, SaaS, modules Odoo sur mesure, et sites CMS pour des clients à Madagascar et ailleurs."
+    },
+    "eyebrow": "// tous mes projets",
+    "title": "Ce que j'ai construit",
+    "subtitle": "Une sélection de projets récents, du e-commerce avec IA aux modules Odoo sur mesure, en passant par des sites vitrines pour mes clients."
+  },
    "Footer": {
     "location": "Nosy Be, Madagascar",
     "builtWith": "Next.js · Tailwind · déployé sur VPS Contabo",

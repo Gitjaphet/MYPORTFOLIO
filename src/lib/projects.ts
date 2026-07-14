@@ -32,6 +32,7 @@ export type Project = {
   url: string;
   githubUrl?: string;
   videoUrl?: string;
+  featured?: boolean;
   tech: { label: string; Icon: TechIcon; color?: string }[];
   screenshots: string[];
 };
