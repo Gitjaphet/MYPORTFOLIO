@@ -208,6 +208,22 @@
       }
     }
   },
+  "Blog": {
+    "meta": {
+      "title": "Blog — Japhet Bezanaka",
+      "description": "Bientôt disponible : articles techniques sur le développement full-stack, DevOps et Odoo."
+    },
+    "eyebrow": "// blog",
+    "title": "En cours de rédaction",
+    "subtitle": "Le blog arrive bientôt : retours d'expérience Next.js, Django, Odoo et DevOps, écrits comme je les vis vraiment sur le terrain.",
+    "terminal": {
+      "status": "npm run build:blog",
+      "line1": "Rédaction des premiers articles...",
+      "line2": "Mise en page & relecture...",
+      "line3": "Publication à venir"
+    },
+    "cta": "Me contacter en attendant"
+  },
    "Footer": {
     "location": "Nosy Be, Madagascar",
     "builtWith": "Next.js · Tailwind · déployé sur VPS Contabo",
