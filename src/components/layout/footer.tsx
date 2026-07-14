@@ -10,7 +10,7 @@ export async function Footer({ locale }: Props) {
 
   return (
     <footer className="border-t border-black/5 dark:border-white/5">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-12 lg:px-16">
         {/* Gauche : copyright + localisation */}
         <div className="flex flex-col gap-1 font-mono text-xs text-neutral-500 dark:text-neutral-400">
           <span>
