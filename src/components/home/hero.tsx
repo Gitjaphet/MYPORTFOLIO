@@ -23,6 +23,14 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
+function WhatsappIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 4.99L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.35-.5.05-.99.24-3.34-.7-2.83-1.13-4.63-4-4.77-4.19-.14-.19-1.14-1.51-1.14-2.88 0-1.36.72-2.03.97-2.3.24-.28.53-.34.71-.34.19 0 .38 0 .54.01.17.01.4-.07.63.48.24.57.8 1.98.87 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.92 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.53.33.07.12.07.68-.17 1.36Z" />
+    </svg>
+  );
+}
+
 export function Hero() {
   const t = useTranslations("HomePage");
 
@@ -153,9 +161,11 @@ export function Hero() {
             <a
               href="https://wa.me/261327756859"
               aria-label="Whatsapp"
+              target="_blank"
+              rel="noreferrer"
               className="text-zinc-400 transition-colors hover:text-white"
             >
-              <Mail className="h-5 w-5" />
+              <WhatsappIcon className="h-5 w-5" />
             </a>
           </div>
         </div>
