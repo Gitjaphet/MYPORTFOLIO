@@ -3,18 +3,22 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import type { ReactNode } from "react";
+import type { HTMLMotionProps } from "framer-motion";
+
+type RevealProps = {
+  children: ReactNode;
+  delay?: number;
+  y?: number;
+  className?: string;
+} & Omit<HTMLMotionProps<"div">, "initial" | "animate" | "transition" | "children" | "className" | "ref">;
 
 export function Reveal({
   children,
   delay = 0,
   y = 40,
   className,
-}: {
-  children: ReactNode;
-  delay?: number;
-  y?: number;
-  className?: string;
-}) {
+  ...rest
+}: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.2 });
   const controls = useAnimation();
@@ -34,6 +38,7 @@ export function Reveal({
       animate={controls}
       transition={{ duration: 1.6, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
+      {...rest}
     >
       {children}
     </motion.div>

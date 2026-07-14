@@ -40,19 +40,17 @@ export function Timeline() {
             const glowColor = CARD_COLORS[i % CARD_COLORS.length];
 
             return (
-              <motion.div
+              <Reveal
                 key={`${entry.key}-${i}`}
+                delay={Math.min(i * 0.06, 0.3)}
+                y={20}
                 onHoverStart={() => setActiveIndex(i)}
                 onHoverEnd={() => setActiveIndex(null)}
                 onClick={() => toggle(i)}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 className={`relative flex cursor-pointer flex-col gap-4 pl-10 md:flex-row md:items-center md:gap-10 md:pl-0 ${
-                  isEven ? "" : "md:flex-row-reverse"
+                    isEven ? "" : "md:flex-row-reverse"
                 }`}
-              >
+                >
                 <span
                   className={`absolute left-[13px] top-6 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full transition-colors duration-300 md:left-1/2 ${
                     isActive ? "bg-lime-400" : "bg-zinc-300 dark:bg-zinc-700"
@@ -136,7 +134,7 @@ export function Timeline() {
                     )}
                   </AnimatePresence>
                 </div>
-              </motion.div>
+              </Reveal>
             );
           })}
         </div>
