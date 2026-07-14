@@ -104,7 +104,7 @@ export function PageHero({
         </div>
 
         {stats && stats.length > 0 && (
-          <div className="absolute bottom-6 right-6 hidden flex-col gap-2 rounded-xl border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-sm sm:flex">
+          <div className="absolute bottom-16 right-6 hidden flex-col gap-2 rounded-xl border border-white/10 bg-black/40 px-4 py-3 backdrop-blur-sm sm:flex md:bottom-20">
             {stats.map((stat) => (
               <div key={stat.label} className="flex items-center gap-2 text-xs">
                 <span className="h-1.5 w-1.5 rounded-full bg-lime-400" />
