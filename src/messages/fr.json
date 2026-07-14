@@ -155,16 +155,16 @@
   },
   "Projects": {
     "meta": {
-      "title": "Projects — Japhet Bezanaka",
-      "description": "A look at my work: e-commerce, SaaS, custom Odoo modules, and CMS sites for clients in Madagascar and beyond."
+      "title": "Projets — Japhet Bezanaka",
+      "description": "Découvrez mes réalisations : e-commerce, SaaS, modules Odoo sur mesure, et sites CMS pour des clients à Madagascar et ailleurs."
     },
-    "badge": "Technical portfolio",
-    "eyebrow": "// all my projects",
-    "title": "What I've built",
-    "subtitle": "A selection of recent projects, from AI-powered e-commerce to custom Odoo modules and client showcase sites.",
+    "badge": "Portfolio technique",
+    "eyebrow": "// tous mes projets",
+    "title": "Ce que j'ai construit",
+    "subtitle": "Une sélection de projets récents, du e-commerce avec IA aux modules Odoo sur mesure, en passant par des sites vitrines pour mes clients.",
     "stats": {
-      "projects": "Projects delivered",
-      "tech": "Technologies used"
+      "projects": "Projets livrés",
+      "tech": "Technologies utilisées"
     }
   },
    "Footer": {
