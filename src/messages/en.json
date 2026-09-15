@@ -230,6 +230,45 @@
       }
     }
   },
+  "EngineeringStandards": {
+    "kicker": "// how I build",
+    "title": "What doesn't get compromised",
+    "description": "Beyond code that works: a way of building meant to last, stay maintainable, and keep my clients' data safe.",
+    "items": {
+      "architecture": {
+        "label": "ARCHITECTURE",
+        "description": "I design the structure before writing a single line — anticipating load and growth instead of patching things up later."
+      },
+      "cleanCode": {
+        "label": "CLEAN CODE",
+        "description": "Organized and documented: any developer can pick up the project without me."
+      },
+      "apiDocs": {
+        "label": "DOCUMENTED API",
+        "description": "Every endpoint clear and predictable for whoever integrates it, with nothing left to guess."
+      },
+      "images": {
+        "label": "OPTIMIZED IMAGES",
+        "description": "Formats and file sizes tuned for fast loading, without sacrificing visual quality."
+      },
+      "performance": {
+        "label": "OPTIMIZED CODE",
+        "description": "Fast and lean, with no unnecessary complexity or over-engineering."
+      },
+      "backups": {
+        "label": "BACKUPS",
+        "description": "Automated and regular: the client's data never gets lost."
+      },
+      "monitoring": {
+        "label": "MONITORING",
+        "description": "I see the incident before the client ever feels it, thanks to proactive monitoring."
+      },
+      "containers": {
+        "label": "ISOLATED CONTAINERS",
+        "description": "Every service isolated and reproducible: back up and running in minutes, never hours."
+      }
+    }
+  },
   "Blog": {
     "meta": {
       "title": "Blog — Japhet Bezanaka",

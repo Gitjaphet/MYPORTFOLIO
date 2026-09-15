@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { PageHero } from "@/components/ui/page-hero";
 import { AboutSummary } from "@/components/home/about-summary";
 import { Timeline } from "@/components/about/timeline";
+import { EngineeringStandards } from "@/components/about/engineering-standards";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -33,6 +34,8 @@ export default async function AboutPage({ params }: Props) {
       <AboutSummary />
 
       <Timeline />
+
+      <EngineeringStandards />
     </>
   );
 }

@@ -230,6 +230,45 @@
       }
     }
   },
+  "EngineeringStandards": {
+    "kicker": "// comment je travaille",
+    "title": "Ce qui ne se négocie pas",
+    "description": "Au-delà du code qui fonctionne : une manière de construire pensée pour durer, se maintenir facilement et protéger les données de mes clients.",
+    "items": {
+      "architecture": {
+        "label": "ARCHITECTURE",
+        "description": "Je conçois la structure avant d'écrire la moindre ligne — anticiper la charge et l'évolution plutôt que rattraper après coup."
+      },
+      "cleanCode": {
+        "label": "CODE PROPRE",
+        "description": "Organisé et documenté : n'importe quel développeur peut reprendre le projet sans moi."
+      },
+      "apiDocs": {
+        "label": "API DOCUMENTÉE",
+        "description": "Chaque endpoint clair et prévisible pour qui l'intègre, sans deviner son comportement."
+      },
+      "images": {
+        "label": "IMAGES OPTIMISÉES",
+        "description": "Formats et poids adaptés pour un chargement rapide, sans sacrifier la qualité visuelle."
+      },
+      "performance": {
+        "label": "CODE OPTIMISÉ",
+        "description": "Rapide et sobre, sans complexité inutile ni sur-ingénierie."
+      },
+      "backups": {
+        "label": "SAUVEGARDES",
+        "description": "Automatisées et régulières : la donnée du client ne se perd jamais."
+      },
+      "monitoring": {
+        "label": "MONITORING",
+        "description": "Je vois l'incident avant que le client ne le vive, grâce à une surveillance proactive."
+      },
+      "containers": {
+        "label": "CONTENEURS ISOLÉS",
+        "description": "Chaque service isolé et reproductible : une reprise en quelques minutes, jamais en heures."
+      }
+    }
+  },
   "Blog": {
     "meta": {
       "title": "Blog — Japhet Bezanaka",
