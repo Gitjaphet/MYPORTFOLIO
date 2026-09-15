@@ -22,6 +22,10 @@ import {
   SiMysql,
   SiApache,
   SiSqlite,
+  SiTailwindcss,
+  SiFramer,
+  SiRedis,
+  SiStripe,
 } from "react-icons/si";
 import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search, Database, Megaphone, KeyRound, GitBranch } from "lucide-react";
 
@@ -153,5 +157,28 @@ export const projects: Project[] = [
       { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
     ],
     screenshots: ["/images/projects/seo-keywords-madagascar-01-placeholder.png"],
+  },
+  {
+    slug: "sakalavatours",
+    domain: "sakalavatours.vercel.app",
+    url: "https://sakalavatours.vercel.app",
+    githubUrl: "https://github.com/Gitjaphet/sakalavatours",
+    featured: true,
+    tech: [
+      { label: "Next.js", Icon: SiNextdotjs },
+      { label: "TypeScript", Icon: SiTypescript, color: "#3178C6" },
+      { label: "Tailwind CSS", Icon: SiTailwindcss, color: "#06B6D4" },
+      { label: "Framer Motion", Icon: SiFramer, color: "#0055FF" },
+      { label: "FastAPI", Icon: SiFastapi, color: "#009688" },
+      { label: "PostgreSQL", Icon: SiPostgresql, color: "#336791" },
+      { label: "Redis", Icon: SiRedis, color: "#DC382D" },
+      { label: "Alembic", Icon: GitBranch },
+      { label: "Stripe", Icon: SiStripe, color: "#635BFF" },
+      { label: "Cloudflare R2", Icon: SiCloudflare, color: "#F38020" },
+      { label: "Multilingue FR/EN/DE/IT", Icon: Languages },
+      { label: "Docker", Icon: SiDocker, color: "#2496ED" },
+      { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
+    ],
+    screenshots: ["/images/projects/sakalavatours-01-placeholder.png"],
   },
 ];
