@@ -156,7 +156,7 @@ export const projects: Project[] = [
       { label: "Google Autocomplete", Icon: Search },
       { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
     ],
-    screenshots: ["/images/projects/seo-keywords-madagascar-01-placeholder.png"],
+    screenshots: ["/images/projects/seo-keywords-madagascar-01-schema.png"],
   },
   {
     slug: "sakalavatours",
@@ -179,6 +179,13 @@ export const projects: Project[] = [
       { label: "Docker", Icon: SiDocker, color: "#2496ED" },
       { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
     ],
-    screenshots: ["/images/projects/sakalavatours-01-placeholder.png"],
+    screenshots: [
+      "/images/projects/sakalavatours-01-dashboard.png",
+      "/images/projects/sakalavatours-02-dashboard.png",
+      "/images/projects/sakalavatours-03-dashboard.png",
+      "/images/projects/sakalavatours-04-dashboard.png",
+      "/images/projects/sakalavatours-05-dashboard.png",
+      "/images/projects/sakalavatours-06-dashboard.png",
+    ],
   },
 ];
