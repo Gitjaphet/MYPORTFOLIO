@@ -22,9 +22,8 @@ import {
   SiMysql,
   SiApache,
   SiSqlite,
-  SiAlembic,
 } from "react-icons/si";
-import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search, Database, Megaphone, KeyRound } from "lucide-react";
+import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search, Database, Megaphone, KeyRound, GitBranch } from "lucide-react";
 
 type TechIcon = ComponentType<{ className?: string; style?: React.CSSProperties }>;
 
@@ -147,7 +146,7 @@ export const projects: Project[] = [
       { label: "Python", Icon: SiPython, color: "#3776AB" },
       { label: "SQLModel", Icon: Database },
       { label: "SQLite", Icon: SiSqlite, color: "#003B57" },
-      { label: "Alembic", Icon: SiAlembic },
+      { label: "Alembic", Icon: GitBranch },
       { label: "Google Ads API", Icon: Megaphone },
       { label: "OAuth 2.0", Icon: KeyRound },
       { label: "Google Autocomplete", Icon: Search },
