@@ -33,6 +33,7 @@ import {
   SiLangchain,
   SiN8N,
   SiProxmox,
+  SiSqlite,
 } from "react-icons/si";
 import {
   FileCode2,
@@ -41,10 +42,15 @@ import {
   Network,
   Boxes,
   BrainCircuit,
+  Database,
+  GitBranch,
+  Megaphone,
+  KeyRound,
+  Search,
 } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 
-type CategoryKey = "languages" | "frameworks" | "cloud" | "ai";
+type CategoryKey = "languages" | "frameworks" | "cloud" | "ai" | "data";
 
 type StackItem = {
   name: string;
@@ -95,9 +101,17 @@ const STACK: Record<CategoryKey, StackItem[]> = {
     { name: "LangChain", Icon: SiLangchain, color: "#1C3C3C" },
     { name: "n8n", Icon: SiN8N, color: "#EA4B71" },
   ],
+  data: [
+    { name: "SQLModel", Icon: Database },
+    { name: "SQLite", Icon: SiSqlite, color: "#003B57" },
+    { name: "Alembic", Icon: GitBranch },
+    { name: "Google Ads API", Icon: Megaphone },
+    { name: "OAuth 2.0", Icon: KeyRound },
+    { name: "Google Autocomplete", Icon: Search },
+  ],
 };
 
-const TABS: CategoryKey[] = ["languages", "frameworks", "cloud", "ai"];
+const TABS: CategoryKey[] = ["languages", "frameworks", "cloud", "ai", "data"];
 
 export function TechStack() {
   const t = useTranslations("TechStack");
