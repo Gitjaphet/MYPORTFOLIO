@@ -21,8 +21,10 @@ import {
   SiPhp,
   SiMysql,
   SiApache,
+  SiSqlite,
+  SiAlembic,
 } from "react-icons/si";
-import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search } from "lucide-react";
+import { Mail, Server, BrainCircuit, Boxes, Clock, Languages, Search, Database, Megaphone, KeyRound } from "lucide-react";
 
 type TechIcon = ComponentType<{ className?: string; style?: React.CSSProperties }>;
 
@@ -135,5 +137,22 @@ export const projects: Project[] = [
       "/images/projects/o2switch.png",
       "/images/projects/o2switch2.png"
     ],
+  },
+  {
+    slug: "seo-keywords-madagascar",
+    domain: "github.com/Gitjaphet/seo-keywords-madagascar",
+    url: "",
+    githubUrl: "https://github.com/Gitjaphet/seo-keywords-madagascar",
+    tech: [
+      { label: "Python", Icon: SiPython, color: "#3776AB" },
+      { label: "SQLModel", Icon: Database },
+      { label: "SQLite", Icon: SiSqlite, color: "#003B57" },
+      { label: "Alembic", Icon: SiAlembic },
+      { label: "Google Ads API", Icon: Megaphone },
+      { label: "OAuth 2.0", Icon: KeyRound },
+      { label: "Google Autocomplete", Icon: Search },
+      { label: "GitHub Actions", Icon: SiGithubactions, color: "#2088FF" },
+    ],
+    screenshots: ["/images/projects/seo-keywords-madagascar-01-placeholder.png"],
   },
 ];

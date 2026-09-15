@@ -72,6 +72,17 @@
           "Structure de contenu multilingue FR/IT avec gestion des articles, menus et navigation dédiés par langue.",
           "Configuration de l'hébergement o2switch et optimisation SEO on-page pour cibler les recherches liées au tourisme à Nosy Be et Madagascar."
         ]
+      },
+      "seo-keywords-madagascar": {
+        "name": "SEO Keywords Madagascar",
+        "tagline": "SEO Keywords Madagascar : pipeline de recherche et clustering de mots-clés multilingue",
+        "description": "Un outil de recherche de mots-clés pour le SEO touristique, construit pour alimenter la stratégie de contenu de sakalavatours.com. Combine la collecte automatisée via Google Autocomplete et l'enrichissement par l'API Google Ads (volume de recherche, concurrence), avec classification d'intention et clustering thématique multilingue.",
+        "features": [
+          "Collecte automatisée de mots-clés sur 4 locales via Google Autocomplete, stockés et modélisés avec SQLModel/SQLite.",
+          "Classification d'intention de recherche et clustering thématique pour structurer une stratégie de contenu SEO.",
+          "Intégration Google Ads API (OAuth, flux Desktop App) pour enrichir les mots-clés avec volume de recherche et niveau de concurrence, exécuté en cron sans intervention manuelle.",
+          "Schéma de données versionné avec Alembic (4 migrations successives), avec traçabilité complète des révisions manuelles vs automatiques sur chaque mot-clé."
+        ]
       }
     }
   },
