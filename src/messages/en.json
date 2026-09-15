@@ -83,6 +83,17 @@
           "Google Ads API integration (OAuth, Desktop App flow) enriching keywords with search volume and competition level, run on a cron schedule with no manual intervention.",
           "Versioned data schema with Alembic (4 successive migrations), with full audit trail of manual vs. automatic revisions on every keyword."
         ]
+      },
+      "sakalavatours": {
+        "name": "Sakalava Tours",
+        "tagline": "Sakalava Tours: full rebuild of a travel agency site, from SEO to payments (ongoing project)",
+        "description": "Complete rebuild of a Nosy Be, Madagascar travel agency's website following an SEO spam attack on the old site. Next.js monorepo (App Router, mixed ISR/SSG/SSR) with a dedicated FastAPI backend, multilingual in 4 languages, built to target the top Google spot for excursions and tours in Madagascar.",
+        "features": [
+          "Fully multilingual content (FR/EN/DE/IT) with per-field locale fallback, plus complete technical SEO: JSON-LD (TouristTrip, FAQPage, BreadcrumbList), sitemap, and automatic 301 redirects on slug changes.",
+          "Dedicated FastAPI backend with over 50 data models (products, bookings, reviews, blog, media), price snapshotting at booking time, and full audit trail on every status change.",
+          "Strict review moderation: only approved reviews tied to a real completed booking count toward the publicly displayed rating, avoiding any risk of a Google manual action.",
+          "Hybrid infrastructure: frontend on Vercel (CDN + ISR), API/PostgreSQL/Redis on a VPS, media on Cloudflare R2, automatic deployment via GitHub Actions."
+        ]
       }
     }
   },

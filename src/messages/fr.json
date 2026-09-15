@@ -83,6 +83,17 @@
           "Intégration Google Ads API (OAuth, flux Desktop App) pour enrichir les mots-clés avec volume de recherche et niveau de concurrence, exécuté en cron sans intervention manuelle.",
           "Schéma de données versionné avec Alembic (4 migrations successives), avec traçabilité complète des révisions manuelles vs automatiques sur chaque mot-clé."
         ]
+      },
+      "sakalavatours": {
+        "name": "Sakalava Tours",
+        "tagline": "Sakalava Tours : refonte complète d'un site d'agence de voyage, du SEO au paiement (projet en cours)",
+        "description": "Refonte totale du site d'une agence de voyage à Nosy Be, Madagascar, suite à une attaque SEO spam sur l'ancien site. Monorepo Next.js (App Router, ISR/SSG/SSR mixtes) et API FastAPI dédiée, multilingue en 4 langues, conçu pour viser la première place Google sur les excursions et circuits à Madagascar.",
+        "features": [
+          "Contenu entièrement multilingue (FR/EN/DE/IT) avec repli de langue par champ, et SEO technique complet : JSON-LD (TouristTrip, FAQPage, BreadcrumbList), sitemap et redirections 301 automatiques sur changement de slug.",
+          "API FastAPI dédiée avec plus de 50 modèles de données (produits, réservations, avis, blog, médias), snapshot du prix à la réservation et traçabilité complète de chaque changement de statut.",
+          "Modération stricte des avis clients : seuls les avis approuvés ET rattachés à une réservation réelle alimentent la note affichée publiquement, pour éviter tout risque de pénalité Google.",
+          "Infrastructure hybride : frontend sur Vercel (CDN + ISR), API/PostgreSQL/Redis sur VPS, médias sur Cloudflare R2, déploiement automatique via GitHub Actions."
+        ]
       }
     }
   },
